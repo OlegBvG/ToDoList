@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7855fa4-8dfb-4aa7-9a32-29b4544a3ab7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580674115477</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Scheduler with Concurrency">
+      <created>1580933717285</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580933717285</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +124,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Scheduler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scheduler" />
+    <MESSAGE value="Scheduler with Concurrency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scheduler with Concurrency" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580061663059">
@@ -137,10 +140,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="648" y="20" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580061861035" />
-    <state x="614" y="133" key="CommitChangelistDialog2" timestamp="1580933579381">
+    <state x="614" y="133" key="CommitChangelistDialog2" timestamp="1580933714734">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="614" y="133" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580933579381" />
+    <state x="614" y="133" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580933714734" />
     <state width="1876" height="278" key="GridCell.Tab.0.bottom" timestamp="1580933579595">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
