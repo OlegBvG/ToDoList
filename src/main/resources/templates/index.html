@@ -20,16 +20,25 @@
             <button id="save-deal">Сохранить</button>
         </form>
     </div>
+
+
     <h1>Список дел (<span th:text="${dealsCount}">0</span>)</h1>
     <button id="show-add-deal-form">Добавить дело</button>
-
-
     <br><br>
+
+    <FORM id="alldeal-form" action="/deals/" method="get">
+        <button id="List-deal">Список дел (формат JSON)</button>
+    </FORM>
+
+    <br>
     <div id="deal-list">
         <div th:each="deal : ${deals}">
             <a href="#" class="deal-link" th:attr="data-id=${deal.id}" th:text="${deal.name}"></a>
         </div>
     </div>
+
+
+
     <p th:text="${someParameter}"></p>
 </body>
 </html>

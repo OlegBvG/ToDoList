@@ -11,14 +11,14 @@ public class Storage
     private static int currentId = 1;
     private static HashMap<Integer, Deal> deals = new HashMap<Integer, Deal>();
 
-    public static List<Deal> getAllDeals()
+    public synchronized static List<Deal> getAllDeals()
     {
         ArrayList<Deal> dealsList = new ArrayList<Deal>();
         dealsList.addAll(deals.values());
         return dealsList;
     }
 
-    public static int addDeal(Deal deal)
+    public synchronized static int addDeal(Deal deal)
     {
         int id = currentId++;
         deal.setId(id);
@@ -26,7 +26,7 @@ public class Storage
         return id;
     }
 
-    public static Deal getDeal(int dealId)
+    public synchronized static Deal getDeal(int dealId)
     {
         if(deals.containsKey(dealId)) {
             return deals.get(dealId);

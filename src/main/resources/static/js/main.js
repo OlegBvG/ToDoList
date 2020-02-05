@@ -27,6 +27,7 @@ $(function(){
         }
     });
 
+
     //Getting deal
     $(document).on('click', '.deal-link', function(){
         var link = $(this);
