@@ -7,7 +7,6 @@
     <script src="/js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
-<!--<body bgcolor="#fa8e47">-->
 <body>
     <div id="deal-form">
         <form>
@@ -32,9 +31,19 @@
 
     <br>
     <div id="deal-list">
+        <table id="table" border="1" cellpadding="20" bgcolor="#33FF99" >
+            <caption>ЗАПЛАНИРОВАНО</caption>
         <div th:each="deal : ${deals}">
-            <a href="#" class="deal-link" th:attr="data-id=${deal.id}" th:text="${deal.name}"></a>
+            <tr>
+                <td>
+                    <a class="deal-link" href="#" th:attr="data-id=${deal.id}" th:text="${deal.name}"></a>
+                </td>
+                <td>
+                    <a class="deal-linkD" href="#" th:attr="data-id=${deal.id}" th:text="Удалить"></a>
+                </td>
+            </tr>
         </div>
+        </table>
     </div>
 
 

@@ -51,4 +51,12 @@ public class DealController
         }
         return new ResponseEntity(optionalDeal.get(), HttpStatus.OK);
     }
+
+    @DeleteMapping("/deals/{id}")
+    public void delete(@PathVariable int id)
+    {
+        dealRepository.deleteById(id);
+        return;
+
+    }
 }

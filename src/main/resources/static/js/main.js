@@ -1,11 +1,16 @@
 $(function(){
 
     const appendDeal = function(data){
-        var dealCode = '<a href="#" class="deal-link" data-id="' +
-            data.id + '">' + data.name + '</a><br>';
-        $('#deal-list')
-            .append('<div>' + dealCode + '</div>');
+        var dealCode = '<tr> <td>' +
+        '<a href="#" class="deal-link" data-id="' +  data.id + '">' + data.name + '</a>'+
+                         '</td> <td>' +
+        '<a href="#" class="deal-linkD" data-id="' + data.id + '">' + "Удалить" + '</a>'+
+                         '</td> </tr>'
+
+        $('#table')
+            .append(dealCode);
     };
+
 
     //Loading deals on load page
 //    $.get('/deals/', function(response)
@@ -72,5 +77,28 @@ $(function(){
         });
         return false;
     });
+
+        //Deleting deal
+        $(document).on('click', '.deal-linkD', function(){
+            var link = $(this);
+            var dealId = link.data('id');
+
+            $.ajax({
+
+                method: "DELETE",
+                url: '/deals/' + dealId,
+                success: function(response)
+                {
+                  link.parent().append(" <УДАЛЕНО!> ");
+                },
+                error: function(response)
+                {
+                    if(response.status == 404) {
+                        alert('Дело не найдено!');
+                    }
+                }
+            });
+            return false;
+        });
 
 });
