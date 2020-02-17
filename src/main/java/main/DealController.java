@@ -29,12 +29,6 @@ public class DealController
         return deals;
     }
 
-//    @GetMapping(value = "/all-deals")
-//    public String all (ModelMap model){
-//        List<Deals> deals = dealService.findAlldeals();
-//        model.put("deals", deals);
-//        return "deals";
-
     @PostMapping("/deals/")
     public int add(Deal deal)
     {

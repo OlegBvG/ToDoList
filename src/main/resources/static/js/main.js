@@ -1,7 +1,7 @@
 $(function(){
 
     const appendDeal = function(data){
-        var dealCode = '<tr> <td>' +
+        var dealCode =   '<tr> <td>' +
         '<a href="#" class="deal-link" data-id="' +  data.id + '">' + data.name + '</a>'+
                          '</td> <td>' +
         '<a href="#" class="deal-linkD" data-id="' + data.id + '">' + "Удалить" + '</a>'+
@@ -10,15 +10,6 @@ $(function(){
         $('#table')
             .append(dealCode);
     };
-
-
-    //Loading deals on load page
-//    $.get('/deals/', function(response)
-//    {
-//        for(i in response) {
-//            appendDeal(response[i]);
-//        }
-//    });
 
     //Show adding deal form
     $('#show-add-deal-form').click(function(){
